@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Terminal Past</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./css/flip.min.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+
+         
+           
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- SCANLINES BOX -->
+
+
+
+        <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+    <div class="menu">
+      <ul>
+<li><a href="#">Internet</a></li>
+<li><a href="#">Past</a></li>
+<li><a href="#">Division</a></li>
+<li><a href="#">Agreement</a></li>
+<li><a href="#">Unity</a></li>
+</ul>
+</div>
+        
+        <div id="wrapper" class="">
+            
+            <ul class="scanlines css-selector">
+                
+    
+            </ul>
+
+
+            <h1>C:\>type TerminalPast.txt</h1>
+
+            <div id="container">
+                <div id="message">
+                  
+                </div>
+              </div>
+            
+            <div class="tick"
+                data-value="1234"
+                data-did-init="startDateCountdown">
+             
+               <!-- Hide visual content from screenreaders with `aria-hidden` -->
+               <div data-repeat="true" aria-hidden="true">
+                   <span data-view="flip"></span>
+               </div>
+             
+           </div>
+           
+           <script>
+           function startDateCountdown(tick) {
+                   var counter = Tick.count.down('2021-10-08');
+                   counter.onupdate = function(value) {
+                       // by default value will contain an
+                       // array with days, hours, minutes, seconds
+                       tick.value = value;
+                   };
+                   counter.onended = function() {
+                       // reached target date!
+                   }
+               }
+           </script>
+
+        </div>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" async defer></script>
+        <script src="./js/flip.min.js"></script>
+        
+        <script src="./js/textScroll.js"></script>
+    </body>
+ 
+    
+        
+</html>
