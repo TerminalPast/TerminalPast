@@ -14,6 +14,19 @@
 }
 
 
+
+nav{
+  position: fixed;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  transition: background-color 0.4s ease-out;
+}
+
+nav.scroll {
+  background-color: rgb(0, 0, 0);
+  
+}
 .tick {
   font-size: 2.7rem;
   position: absolute;
@@ -35,20 +48,12 @@ body {
 
 h1 {
   font-family: PerfectDOS;
-  color: #fff;
-  font-size: 5rem;
-
-  display: inline-block;
-
-  width: 100%;
-  margin: 0;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-  text-align: center;
+    color: #fff;
+    font-size: 5rem;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
 }
 
 h1:after {
@@ -62,6 +67,51 @@ h1:after {
   animation: blink 1s linear infinite alternate;
 }
 
+h2{
+  display: inline;
+  color: white;
+  font-family: "PerfectDOS";
+  font-size: 1.4rem;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  z-index: 5;
+}
+h2::after{
+  content: "";
+  margin-left: 5px;
+  width: 18px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  display: inline-block;
+  animation: blink 1s linear infinite alternate;
+}
+
+.ascii{
+  max-width: 150ch;
+  font-family: "PerfectDOS";
+  font-size: 1vw;
+    color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    top: 10vh;
+}
+
+
+
+
+
 @keyframes blink {
   50% {
     opacity: 0;
@@ -72,9 +122,9 @@ h1:after {
 }
 
 #wrapper {
-  min-height: 100vh;
+  overflow: hidden;
   z-index: -1;
-  position: relative;
+
 }
 
 .timer-container {
@@ -149,9 +199,9 @@ keyframes :
 /* CSS .scanlines CLASS */
 .scanlines {
   position: relative;
-  overflow: hidden;
+  
   width: 100vw;
-  height: 100vh;
+  
   margin: 0;
   /* left: 0; */
   /* right: 0; */
@@ -173,8 +223,7 @@ keyframes :
   z-index: 2147483649;
   background: rgba(0, 0, 0, 0.3);
   opacity: 0.75;
-  -webkit-animation: scanline 6s linear infinite;
-  animation: scanline 6s linear infinite;
+
 }
 .scanlines:after {
   top: 0;
@@ -191,6 +240,20 @@ keyframes :
   -webkit-animation: scanlines 10s steps(60) infinite;
   animation: scanlines 10s steps(60) infinite;
 }
+
+.scanliner{
+  width: 100%;
+  height: 2px;
+  z-index: 2147483649;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.75;
+  -webkit-animation: scanline 6s linear infinite;
+  animation: scanline 6s linear infinite;
+}
+
+
+
+
 
 /* ANIMATE UNIQUE SCANLINE */
 @-webkit-keyframes scanline {
@@ -227,12 +290,13 @@ keyframes :
   background: #000;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 #active:checked ~ .menu {
   clip-path: circle(75%);
 }
 .menu-btn {
-  position: absolute;
+ 
   z-index: 2;
   right: 20px;
   /* left: 20px; */
@@ -338,7 +402,7 @@ input[type="checkbox"] {
   clip-path: circle(75%);
 }
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   right: 20px;
   /* left: 20px; */
