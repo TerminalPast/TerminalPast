@@ -93,7 +93,7 @@ h2::after{
   animation: blink 1s linear infinite alternate;
 }
 
-.ascii{
+.ascii,.ascii-two{
   max-width: 150ch;
   font-family: "PerfectDOS";
   font-size: 1vw;
@@ -107,6 +107,8 @@ h2::after{
 
     top: 10vh;
 }
+
+
 
 
 
@@ -309,9 +311,7 @@ keyframes :
   font-size: 20px;
   color: #fff;
   cursor: pointer;
-  /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+
   background: #000;
   transition: all 0.3s ease-in-out;
 }
@@ -390,10 +390,7 @@ input[type="checkbox"] {
   left: 0;
   height: 100%;
   width: 100%;
-  /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
-  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+
   background: #000;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
@@ -415,9 +412,7 @@ input[type="checkbox"] {
   font-size: 20px;
   color: #fff;
   cursor: pointer;
-  /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+
   background: #000;
   transition: all 0.3s ease-in-out;
 }
@@ -485,6 +480,23 @@ p {
   color: rgb(192, 192, 192);
 }
 
+.point-list{
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  font-family: Courier, monospace;
+  font-smoothing: antialiased;
+  margin: 0.8em 0;
+  font-size: 20px;
+  color: rgb(192, 192, 192);
+  list-style-type: disclosure-closed;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 820px) {
     h1 {
@@ -517,6 +529,10 @@ p {
 
     .tick{
       font-size: 2.4rem;
+    }
+
+    .menu ul li a{
+      font-size: 2.5rem;
     }
 
 
