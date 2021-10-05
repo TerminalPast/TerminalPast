@@ -48,12 +48,16 @@ body {
 
 h1 {
   font-family: PerfectDOS;
-    color: #fff;
-    font-size: 5rem;
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-    text-align: center;
+            color: #fff;
+            font-size: 5rem;
+            position: absolute;
+            top: 20%;
+            width: 100%;
+            text-align: center;
+            left: 50%;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
 }
 
 h1:after {
@@ -127,6 +131,9 @@ h2::after{
   overflow: hidden;
   z-index: -1;
 
+  width: 100vw;
+    height: 100vh;
+    display: block;
 }
 
 .timer-container {
@@ -283,8 +290,8 @@ keyframes :
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
