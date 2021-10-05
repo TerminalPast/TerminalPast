@@ -44,6 +44,7 @@ nav.scroll {
 body {
   height: 100vh;
   margin: 0;
+  overflow-y: scroll;
 }
 
 h1 {
@@ -131,7 +132,8 @@ h2::after{
   overflow: hidden;
   z-index: -1;
 
-  width: 100vw;
+  width: 100%;
+
     display: block;
 }
 
