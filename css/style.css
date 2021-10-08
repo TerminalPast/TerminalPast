@@ -99,7 +99,7 @@ a:hover {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    z-index: -4;
+    z-index: 0;
 }
 .button a, a:hover, a:visited, a:active {
   color: white;
