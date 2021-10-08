@@ -101,6 +101,10 @@ a:hover {
     transform: translateX(-50%) translateY(-50%);
     z-index: -4;
 }
+.button a, a:hover, a:visited, a:active {
+  color: inherit;
+ }
+
 .button .line {
   background: white;
   position: absolute;
