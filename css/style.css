@@ -81,7 +81,7 @@ a:hover {
   -moz-box-shadow: 0 0 20px white;
   box-shadow: 0 0 20px white;
   transition: transform 1s;
-  z-index: ;
+  
 }
 
 .button:hover {
