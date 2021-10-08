@@ -103,6 +103,7 @@ a:hover {
 }
 .button a, a:hover, a:visited, a:active {
   color: white;
+  text-decoration: underline;
  }
 
 .button .line {
